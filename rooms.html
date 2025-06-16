@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamar - Domino by Denata B&B Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icon.jpeg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1>Domino by Denata B&B</h1>
+          <span>HOTEL</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="rooms.html" class="nav-link active">Kamar</a>
+          <a href="about.html" class="nav-link">Tentang</a>
+          <a href="contact.html" class="nav-link">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Pilihan Kamar Kami</h1>
+        <p>Temukan kenyamanan yang sempurna sesuai dengan kebutuhan Anda</p>
+      </div>
+    </section>
+
+    <section class="rooms">
+      <div class="container">
+        <div class="room-card">
+          <div class="room-gallery">
+            <div class="main-image">
+              <img
+                src="assets/sd1.jpeg"
+                alt="Standard Room - Main View"
+                id="standard-main"
+              />
+            </div>
+            <div class="thumbnail-gallery">
+              <img
+                src="assets/sd1.jpeg"
+                alt="Standard Room - Bed View"
+                onclick="changeImage('standard-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+              <img
+                src="assets/sd2.jpeg"
+                alt="Standard Room - Bathroom"
+                onclick="changeImage('standard-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+              <img
+                src="assets/sd3.jpeg"
+                alt="Standard Room - Window View"
+                onclick="changeImage('standard-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+            </div>
+          </div>
+          <div class="room-content">
+            <h2>Supperior Double</h2>
+            <div class="room-features">
+              <span class="feature">👥 2 Tamu</span>
+              <span class="feature">🛏️ 1 Queen Bed</span>
+              <span class="feature">❄️ AC</span>
+              <span class="feature">📺 TV LED 32"</span>
+            </div>
+            <p>
+              Kamar Supperior Double dirancang untuk dua tamu yang menginginkan
+              kenyamanan. Dilengkapi tempat tidur queen, AC, TV LED 32", dan
+              kamar mandi pribadi dengan shower air panas, cocok untuk pasangan
+              atau pelancong bisnis.
+            </p>
+            <div class="room-amenities">
+              <h4>Fasilitas:</h4>
+              <ul>
+                <li>Free WiFi</li>
+                <li>Complimentary bottled water</li>
+                <li>Desk</li>
+                <li>Private bathroom</li>
+                <li>Toiletries</li>
+                <li>Shower</li>
+              </ul>
+            </div>
+            <div class="room-price">
+              <span class="price">Rp 169.463</span>
+              <span class="period">/malam</span>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-gallery">
+            <div class="main-image">
+              <img
+                src="assets/deluxe1.jpeg"
+                alt="Deluxe Room - Main View"
+                id="deluxe-main"
+              />
+            </div>
+            <div class="thumbnail-gallery">
+              <img
+                src="assets/deluxe1.jpeg"
+                alt="Deluxe Room - Bed View"
+                onclick="changeImage('deluxe-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+              <img
+                src="assets/deluxe2.jpeg"
+                alt="Deluxe Room - Balcony"
+                onclick="changeImage('deluxe-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+              <img
+                src="assets/deluxe3.jpeg"
+                alt="Deluxe Room - Sitting Area"
+                onclick="changeImage('deluxe-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+            </div>
+          </div>
+          <div class="room-content">
+            <h2>Deluxe Twin</h2>
+            <div class="room-features">
+              <span class="feature">👥 2 Tamu</span>
+              <span class="feature">🛏️ 2 Queen Bed</span>
+              <span class="feature">❄️ AC</span>
+              <span class="feature">📺 TV LED 43"</span>
+            </div>
+            <p>
+              Kamar Deluxe Twin ideal untuk keluarga kecil atau teman bepergian.
+              Menyediakan tempat tidur king size, area duduk, dan balkon pribadi
+              dengan pemandangan kota. Suasana mewah dan luas menjadikan masa
+              menginap lebih istimewa.
+            </p>
+            <div class="room-amenities">
+              <h4>Fasilitas:</h4>
+              <ul>
+                <li>Free WiFi</li>
+                <li>Complimentary bottled water</li>
+                <li>Desk</li>
+                <li>Private bathroom</li>
+                <li>Toiletries</li>
+                <li>Shower</li>
+              </ul>
+            </div>
+            <div class="room-price">
+              <span class="price">Rp 188.305</span>
+              <span class="period">/malam</span>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-gallery">
+            <div class="main-image">
+              <img
+                src="assets/dd1.jpeg"
+                alt="Executive Suite - Main View"
+                id="suite-main"
+              />
+            </div>
+            <div class="thumbnail-gallery">
+              <img
+                src="assets/dd1.jpeg"
+                alt="Executive Suite - Living Room"
+                onclick="changeImage('suite-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+              <img
+                src="assets/dd2.jpeg"
+                alt="Executive Suite - Bedroom"
+                onclick="changeImage('suite-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+              <img
+                src="assets/dd3.jpeg"
+                alt="Executive Suite - Jacuzzi"
+                onclick="changeImage('suite-main', this.src.replace('120&width=180', '400&width=600'))"
+              />
+            </div>
+          </div>
+          <div class="room-content">
+            <h2>Deluxe Double</h2>
+            <div class="room-features">
+              <span class="feature">👥 2 Tamu</span>
+              <span class="feature">🛏️ 1 King Bed</span>
+              <span class="feature">❄️ AC</span>
+              <span class="feature">📺 TV"</span>
+            </div>
+            <p>
+              Kamar Deluxe Double memberikan suasana elegan dan luas untuk dua
+              tamu. Dilengkapi dengan tempat tidur queen, area duduk modern,
+              serta balkon pribadi untuk menikmati udara segar dan pemandangan
+              sekitar. Cocok untuk pasangan yang menginginkan pengalaman
+              menginap lebih mewah.
+            </p>
+            <div class="room-amenities">
+              <h4>Fasilitas:</h4>
+              <ul>
+                <li>Free WiFi</li>
+                <li>Complimentary bottled water</li>
+                <li>Desk</li>
+                <li>Private bathroom</li>
+                <li>Toiletries</li>
+                <li>Shower</li>
+              </ul>
+            </div>
+            <div class="room-price">
+              <span class="price">Rp 221.097</span>
+              <span class="period">/malam</span>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Denata B&B</h3>
+            <p>
+              Jl. Syakiakirti Jl. Eka Bhakti No.2399<br />
+              20 Ilir D. I, Kec. Ilir Tim. I<br />
+              Kota Palembang, Sumatera Selatan 30126
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <p>
+              Telepon: +62 711 123 4567<br />
+              Email: info@denatabb.com<br />
+              WhatsApp: +62 812 3456 7890
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Ikuti Kami</h3>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/18xg7ucDcP/"
+                target="_blank"
+                >Facebook</a
+              >
+              <a
+                href="https://www.instagram.com/hoteldomino_?igsh=MWE2MTR2MDF1b3R0ZA=="
+                target="_blank"
+                >Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Denata B&B. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js buat galeri -->
+    <script>
+      function changeImage(mainImageId, newSrc) {
+        document.getElementById(mainImageId).src = newSrc;
+      }
+    </script>
+  </body>
+</html>
