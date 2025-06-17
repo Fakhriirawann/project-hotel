@@ -139,8 +139,7 @@
     background: #8b4513;
     color: white;
   }
-  
-  /* Hero Section */
+
   .hero {
     margin-top: 80px;
     padding: 4rem 0;
@@ -181,8 +180,6 @@
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
-  
-  /* Page Header */
   .page-header {
     margin-top: 80px;
     padding: 4rem 0;

@@ -1,335 +1,198 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontak - Denata B&B</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/icon.jpeg" type="image/x-icon" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamar - Grand Serenity Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
-        <div class="logo">
-          <h1>Domino by Denata B&B</h1>
-          <span>HOTEL</span>
+        <div class="container">
+            <div class="logo">
+                <h1>Grand Serenity</h1>
+                <span>HOTEL</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="rooms.html" class="nav-link active">Kamar</a>
+                <a href="about.html" class="nav-link">Tentang</a>
+                <a href="contact.html" class="nav-link">Kontak</a>
+            </nav>
         </div>
-        <nav class="nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="rooms.html" class="nav-link">Kamar</a>
-          <a href="about.html" class="nav-link">Tentang</a>
-          <a href="contact.html" class="nav-link active">Kontak</a>
-        </nav>
-      </div>
     </header>
+
+    <!-- Page Header -->
     <section class="page-header">
-      <div class="container">
-        <h1>Hubungi Kami</h1>
-        <p>
-          Kami siap membantu Anda dengan segala kebutuhan reservasi dan
-          informasi
-        </p>
-      </div>
-    </section>
-    <section class="contact-section">
-      <div class="container">
-        <div class="contact-content">
-          <div class="contact-form-container">
-            <h2>Kirim Pesan</h2>
-            <form
-              class="contact-form"
-              action="https://formspree.io/f/xwpboazz"
-              method="POST"
-            >
-              <div class="form-group">
-                <label for="name">Nama Lengkap</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Nomor Telepon</label>
-                <input type="tel" id="phone" name="phone" />
-              </div>
-              <div class="form-group">
-                <label for="subject">Subjek</label>
-                <select id="subject" name="subject" required>
-                  <option value="" disabled selected hidden>
-                    Pilih Subjek
-                  </option>
-                  <option value="reservation">Reservasi Kamar</option>
-                  <option value="complaint">Keluhan</option>
-                  <option value="suggestion">Saran</option>
-                  <option value="other">Lainnya</option>
-                </select>
-              </div>
-              <!-- FORM TAMBAHAN: kalau pilih Reservasi Kamar -->
-              <div
-                id="reservation-fields"
-                style="display: none; margin-top: 10px"
-              >
-                <div class="form-group">
-                  <label for="checkin">Tanggal Check-In</label>
-                  <input type="date" id="checkin" name="checkin" />
-                </div>
-                <div class="form-group">
-                  <label for="checkout">Tanggal Check-Out</label>
-                  <input type="date" id="checkout" name="checkout" required />
-                </div>
-                <div class="form-group">
-                  <label for="roomtype">Tipe Kamar</label>
-                  <select id="roomtype" name="roomtype" required>
-                    <option value="" disabled selected hidden>
-                      Pilih Kamar
-                    </option>
-                    <option value="standard">Standard Room</option>
-                    <option value="deluxe">Deluxe Room</option>
-                    <option value="family">Family Room</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="message">Pesan</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-            </form>
-          </div>
-          <div class="contact-info">
-            <h2>Informasi Kontak</h2>
-
-            <div class="info-card">
-              <div class="info-icon">📍</div>
-              <div class="info-content">
-                <h3>Alamat</h3>
-                <p>
-                  Jl. Syakiakirti Jl. Eka Bhakti No.2399<br />
-                  20 Ilir D. I, Kec. Ilir Tim. I<br />
-                  Kota Palembang, Sumatera Selatan 30126
-                </p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">📞</div>
-              <div class="info-content">
-                <h3>Telepon</h3>
-                <p>
-                  +62 711 123 4567<br />
-                  +62 711 123 4568 (Fax)
-                </p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">✉️</div>
-              <div class="info-content">
-                <h3>Email</h3>
-                <p>
-                  info@denatabb.com<br />
-                  reservation@denatabb.com
-                </p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">💬</div>
-              <div class="info-content">
-                <h3>WhatsApp</h3>
-                <p>
-                  +62 812 3456 7890<br />
-                  (24 Jam)
-                </p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">🕒</div>
-              <div class="info-content">
-                <h3>Jam Operasional</h3>
-                <p>
-                  Check-in: 14:00<br />
-                  Check-out: 12:00<br />
-                  Resepsionis: 24 Jam
-                </p>
-              </div>
-            </div>
-
-            <div class="social-media">
-              <h3>Ikuti Kami</h3>
-              <div class="social-links">
-                <a
-                  href="https://www.facebook.com/share/18xg7ucDcP/"
-                  class="social-link"
-                  target="_blank"
-                >
-                  <span>📘</span> Facebook
-                </a>
-                <a
-                  href="https://www.instagram.com/hoteldomino_?igsh=MWE2MTR2MDF1b3R0ZA=="
-                  target="_blank"
-                  class="social-link"
-                >
-                  <span>📷</span> Instagram
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="container">
+            <h1>Pilihan Kamar Kami</h1>
+            <p>Temukan kenyamanan yang sempurna sesuai dengan kebutuhan Anda</p>
         </div>
-      </div>
     </section>
-    <section class="map-section">
-      <div class="container">
-        <h2>Lokasi Kami</h2>
-        <div class="map-container">
-          <div class="map-placeholder">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.451726245935!2d104.7561719!3d-2.9720706999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b76742332a0b7%3A0x48bf297e09f732a5!2sHotel%20Domino!5e0!3m2!1sid!2sid!4v1749756310901!5m2!1sid!2sid"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-            <div class="map-overlay">
-              <p>📍 Denata B&B</p>
-              <p>Jl. Syakiakirti Jl. Eka Bhakti No.2399</p>
-              <p>Palembang, Sumatera Selatan</p>
-              <a
-                href="https://www.google.com/maps/place/Hotel+Domino/@-2.9720707,104.753597,17z/data=!3m1!4b1!4m9!3m8!1s0x2e3b76742332a0b7:0x48bf297e09f732a5!5m2!4m1!1i2!8m2!3d-2.9720707!4d104.7561719!16s%2Fg%2F11j2xmrj2k?entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                class="btn btn-secondary"
-                >Buka di Google Maps</a
-              >
+
+    <!-- Rooms Section -->
+    <section class="rooms">
+        <div class="container">
+            <!-- Standard Room -->
+            <div class="room-card">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Standard Room - Main View" id="standard-main" />
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="/placeholder.svg?height=120&width=180" alt="Standard Room - Bed View" onclick="changeImage('standard-main', this.src.replace('120&width=180', '400&width=600'))" />
+                        <img src="/placeholder.svg?height=120&width=180" alt="Standard Room - Bathroom" onclick="changeImage('standard-main', this.src.replace('120&width=180', '400&width=600'))" />
+                        <img src="/placeholder.svg?height=120&width=180" alt="Standard Room - Window View" onclick="changeImage('standard-main', this.src.replace('120&width=180', '400&width=600'))" />
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h2>Standard Room</h2>
+                    <div class="room-features">
+                        <span class="feature">👥 2 Tamu</span>
+                        <span class="feature">🛏️ 1 Queen Bed</span>
+                        <span class="feature">❄️ AC</span>
+                        <span class="feature">📺 TV LED 32"</span>
+                    </div>
+                    <p>Kamar yang nyaman dengan desain modern dan fasilitas lengkap. Dilengkapi dengan AC, TV LED, Wi-Fi gratis, dan kamar mandi pribadi dengan shower air panas.</p>
+                    <div class="room-amenities">
+                        <h4>Fasilitas:</h4>
+                        <ul>
+                            <li>Wi-Fi gratis</li>
+                            <li>Sarapan gratis</li>
+                            <li>Kamar mandi pribadi</li>
+                            <li>Minibar</li>
+                            <li>Safe deposit box</li>
+                        </ul>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">Rp 750.000</span>
+                        <span class="period">/malam</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Pesan Sekarang</a>
+                </div>
             </div>
-          </div>
+
+            <!-- Deluxe Room -->
+            <div class="room-card">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Deluxe Room - Main View" id="deluxe-main" />
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="/placeholder.svg?height=120&width=180" alt="Deluxe Room - Bed View" onclick="changeImage('deluxe-main', this.src.replace('120&width=180', '400&width=600'))" />
+                        <img src="/placeholder.svg?height=120&width=180" alt="Deluxe Room - Balcony" onclick="changeImage('deluxe-main', this.src.replace('120&width=180', '400&width=600'))" />
+                        <img src="/placeholder.svg?height=120&width=180" alt="Deluxe Room - Sitting Area" onclick="changeImage('deluxe-main', this.src.replace('120&width=180', '400&width=600'))" />
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h2>Deluxe Room</h2>
+                    <div class="room-features">
+                        <span class="feature">👥 3 Tamu</span>
+                        <span class="feature">🛏️ 1 King Bed</span>
+                        <span class="feature">❄️ AC</span>
+                        <span class="feature">📺 TV LED 43"</span>
+                    </div>
+                    <p>Kamar yang lebih luas dengan pemandangan kota yang menawan. Dilengkapi dengan tempat tidur king size, area duduk yang nyaman, dan balkon pribadi.</p>
+                    <div class="room-amenities">
+                        <h4>Fasilitas:</h4>
+                        <ul>
+                            <li>Wi-Fi gratis</li>
+                            <li>Sarapan gratis</li>
+                            <li>Balkon pribadi</li>
+                            <li>Area duduk</li>
+                            <li>Minibar premium</li>
+                            <li>Bathrobe & sandal</li>
+                        </ul>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">Rp 1.200.000</span>
+                        <span class="period">/malam</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Pesan Sekarang</a>
+                </div>
+            </div>
+
+            <!-- Suite Room -->
+            <div class="room-card">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Executive Suite - Main View" id="suite-main" />
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="/placeholder.svg?height=120&width=180" alt="Executive Suite - Living Room" onclick="changeImage('suite-main', this.src.replace('120&width=180', '400&width=600'))" />
+                        <img src="/placeholder.svg?height=120&width=180" alt="Executive Suite - Bedroom" onclick="changeImage('suite-main', this.src.replace('120&width=180', '400&width=600'))" />
+                        <img src="/placeholder.svg?height=120&width=180" alt="Executive Suite - Jacuzzi" onclick="changeImage('suite-main', this.src.replace('120&width=180', '400&width=600'))" />
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h2>Executive Suite</h2>
+                    <div class="room-features">
+                        <span class="feature">👥 4 Tamu</span>
+                        <span class="feature">🛏️ 1 King + 1 Sofa Bed</span>
+                        <span class="feature">❄️ AC</span>
+                        <span class="feature">📺 TV LED 55"</span>
+                    </div>
+                    <p>Suite mewah dengan ruang tamu terpisah, dapur kecil, dan pemandangan panorama kota. Pilihan sempurna untuk keluarga atau perjalanan bisnis yang membutuhkan ruang lebih.</p>
+                    <div class="room-amenities">
+                        <h4>Fasilitas:</h4>
+                        <ul>
+                            <li>Wi-Fi gratis</li>
+                            <li>Sarapan gratis</li>
+                            <li>Ruang tamu terpisah</li>
+                            <li>Dapur kecil</li>
+                            <li>Jacuzzi</li>
+                            <li>Butler service</li>
+                            <li>Airport transfer</li>
+                        </ul>
+                    </div>
+                    <div class="room-price">
+                        <span class="price">Rp 2.500.000</span>
+                        <span class="period">/malam</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Pesan Sekarang</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
+
+    <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Denata B&B</h3>
-            <p>
-              Jl. Syakiakirti Jl. Eka Bhakti No.2399<br />
-              20 Ilir D. I, Kec. Ilir Tim. I<br />
-              Kota Palembang, Sumatera Selatan 30126
-            </p>
-          </div>
-          <div class="footer-section">
-            <h3>Kontak</h3>
-            <p>
-              Telepon: +62 711 123 4567<br />
-              Email: info@denatabb.com<br />
-              WhatsApp: +62 812 3456 7890
-            </p>
-          </div>
-          <div class="footer-section">
-            <h3>Ikuti Kami</h3>
-            <div class="social-links">
-              <a
-                href="https://www.facebook.com/share/18xg7ucDcP/"
-                target="_blank"
-                >Facebook</a
-              >
-              <a
-                href="https://www.instagram.com/hoteldomino_?igsh=MWE2MTR2MDF1b3R0ZA=="
-                target="_blank"
-                >Instagram</a
-              >
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grand Serenity Hotel</h3>
+                    <p>Jl. Sudirman No. 123<br>
+                    Jakarta Pusat 10220<br>
+                    Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Telepon: +62 21 1234 5678<br>
+                    Email: info@grandserenity.com<br>
+                    WhatsApp: +62 812 3456 7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Grand Serenity Hotel. All rights reserved.</p>
+            </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 Denata B&B. All rights reserved.</p>
-        </div>
-      </div>
     </footer>
-    <div id="popup" class="popup hidden">
-      <div class="popup-content">
-        <span id="popup-message"></span>
-        <button class="close-btn" onclick="closePopup()">Tutup</button>
-      </div>
-    </div>
+
+    <!-- Add JavaScript for image gallery -->
     <script>
-      const subjectSelect = document.getElementById("subject");
-      const reservationFields = document.getElementById("reservation-fields");
-      const checkinInput = document.getElementById("checkin");
-      const checkoutInput = document.getElementById("checkout");
-      const roomtypeSelect = document.getElementById("roomtype");
-
-      function toggleReservationFields() {
-        const isReservation = subjectSelect.value === "reservation";
-        reservationFields.style.display = isReservation ? "block" : "none";
-        checkinInput.required = isReservation;
-        checkoutInput.required = isReservation;
-        roomtypeSelect.required = isReservation;
-      }
-
-      subjectSelect.addEventListener("change", toggleReservationFields);
-      toggleReservationFields(); // jalankan saat awal
-
-      document
-        .querySelector(".contact-form")
-        .addEventListener("submit", async function (e) {
-          e.preventDefault();
-          const form = e.target;
-          const formData = new FormData(form);
-          const subject = formData.get("subject");
-
-          try {
-            const response = await fetch(form.action, {
-              method: form.method,
-              body: formData,
-              headers: { Accept: "application/json" },
-            });
-
-            if (response.ok) {
-              let message;
-              if (subject === "reservation") {
-                message =
-                  "✅ Reservasi Anda telah dikirim. Kami akan segera menghubungi Anda!";
-              } else if (subject === "complaint") {
-                message =
-                  "📢 Keluhan Anda telah kami terima. Terima kasih atas masukannya.";
-              } else {
-                message =
-                  "✉️ Pesan Anda telah terkirim. Kami akan segera merespons!";
-              }
-              showPopup(message);
-              form.reset();
-              toggleReservationFields();
-            } else {
-              showPopup("❌ Gagal mengirim pesan. Silakan coba lagi nanti.");
-            }
-          } catch (error) {
-            showPopup("⚠️ Terjadi kesalahan koneksi saat mengirim data.");
-          }
-        });
-
-      function showPopup(message) {
-        document.getElementById("popup-message").textContent = message;
-        document.getElementById("popup").classList.remove("hidden");
-      }
-
-      function closePopup() {
-        document.getElementById("popup").classList.add("hidden");
-      }
+    function changeImage(mainImageId, newSrc) {
+        document.getElementById(mainImageId).src = newSrc;
+    }
     </script>
-  </body>
+</body>
 </html>
