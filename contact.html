@@ -63,7 +63,7 @@
             <h2>Kirim Pesan</h2>
             <form
               class="contact-form"
-              action="https://formspree.io/f/xwpboazz"
+              action="https://formspree.io/f/myzjpqkb"
               method="POST"
             >
               <div class="form-group">
@@ -90,7 +90,7 @@
                   <option value="other">Lainnya</option>
                 </select>
               </div>
-              <!-- FORM TAMBAHAN: kalau pilih Reservasi Kamar -->
+              <!-- form kalau reservasi kamar -->
               <div
                 id="reservation-fields"
                 style="display: none; margin-top: 10px"
@@ -301,7 +301,7 @@
       }
 
       subjectSelect.addEventListener("change", toggleReservationFields);
-      toggleReservationFields(); // jalankan saat awal
+      toggleReservationFields(); // jalan diawal
 
       document
         .querySelector(".contact-form")
@@ -353,7 +353,7 @@
     <script>
       const themeCheckbox = document.getElementById('theme-toggle');
     
-      // Ambil tema dari localStorage atau default light
+      // ambil tema
       const savedTheme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-theme', savedTheme);
       themeCheckbox.checked = savedTheme === 'dark';

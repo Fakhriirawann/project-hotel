@@ -1325,21 +1325,16 @@ p {
 .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container:hover {
   left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em)
 }
-
 .theme-switch__circle-container:hover {
   left: calc(var(--circle-container-offset) + 0.187em);
 }
-
 .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__moon {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-}
-
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__clouds {
+}.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__clouds {
   bottom: -4.062em;
 }
-
 .theme-switch__checkbox:checked + .theme-switch__container .theme-switch__stars-container {
   top: 50%;
   -webkit-transform: translateY(-50%);
